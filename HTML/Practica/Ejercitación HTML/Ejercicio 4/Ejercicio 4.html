@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Tecnologica Nacional</title>
+</head>
+
+<body>
+    <fieldset>
+    <p><a href="https://www.frro.utn.edu.ar/"><img height="50" src="https://pbs.twimg.com/profile_images/909940434755096576/SH9q-yOc_400x400.jpg" alt="Logo Universidad Tecnologica" /></a></p>
+    <hr>
+    <h1>ANO 2008</h1>
+    <table border="1" >
+        <th colspan="2" >Examenes</th>
+
+        <tr>
+            <td rowspan="3">Fecha: <span id="datetime"></span></td>
+         </tr>
+         <tr>
+            <td>Aprobados</td>
+         </tr>       
+         <tr>
+            <td>24/30</td>
+         </tr>  
+    </table>
+    <ol>
+        <li><a href="#enunciado">Enunciado del examen</a></li>
+        <li><a href="#" target="_blank">Resolucion</a></li>
+    </ol>
+    <p>Puede realizar consultas completando el siguiente formulario</p>
+    <form id="form" name="form" action="mailto:x@x.com" enctype="text/plain" method="post" target="_blank">
+            Email: <input type="email" id="email" name="email" /><br />
+            Consulta: <textarea rows="3" style="resize: none;" form="form" type="text" id="consulta" name="consulta" height="200"></textarea>
+    <br>
+    <input type="submit" id="sendButton" name="sendButton" value="Enviar" />
+    <input type="reset" id="retetButton" name="retetButton" value="Borrar" />    
+        <h2 id="enunciado">Enunciado del examen</h2>
+        <p>
+            Ejercicio 1: ...........................
+            <br>...............................................
+        </p>
+        <p>
+            Ejercicio 2: ...........................
+            <br>...............................................
+        </p>
+        Para mas informacion dirigirse a <a href="mailto:contacto@xx.com">contacto@xx.com</a>
+</body>
+</fieldset>
+<script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+</script>
+</html>
